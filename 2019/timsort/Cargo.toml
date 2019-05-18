@@ -1,0 +1,23 @@
+[package]
+name = "timsort"
+version = "0.1.0"
+authors = ["x"]
+
+[dev-dependencies]
+criterion = "0.2.11"
+rand = "0.6.5"
+rand_xorshift = "0.1.1"
+
+
+[lib]
+name = "timsort"
+path = "src/lib.rs"
+
+[[bin]]
+name = "timsort_bin"
+path = "src/main.rs"
+
+[[bench]]
+name = "timsort_bench"
+path = "benches/bench.rs"
+harness = false
