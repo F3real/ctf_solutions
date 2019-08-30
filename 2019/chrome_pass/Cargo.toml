@@ -1,0 +1,13 @@
+[package]
+name = "browser_pass"
+version = "0.1.0"
+authors = ["X"]
+edition = "2018"
+
+[dependencies.rusqlite]
+version = "0.20.0"
+features = ["bundled"]
+
+[target.'cfg(windows)'.dependencies.winapi]
+version = "0.3.8"
+features = ["dpapi", "winbase", "wincrypt"]
