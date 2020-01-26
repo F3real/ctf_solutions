@@ -1,0 +1,8 @@
+[package]
+name = "proc_util"
+version = "0.1.0"
+authors = ["anon"]
+edition = "2018"
+
+[dependencies]
+winapi = {version = "0.3.8", features = ["handleapi", "psapi", "processthreadsapi"]}
